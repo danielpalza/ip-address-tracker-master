@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.barra {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/pattern-bg.png");
+  height: 40vh;
+  width: 100vw;
+}
+.barra h1 {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 4.5vh;
+  margin: 2vh;
+}
+.barra form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vh;
+}
+.barra form #button {
+  padding: 2vh;
+  width: 5vh;
+  background-image: url("./images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center;
+  background-color: black;
+  border-radius: 0 2vh 2vh 0;
+  border: none;
+  outline: none;
+}
+.barra form input {
+  border: none;
+  outline: none;
+  font-size: 2vh;
+  border-radius: 2vh 0 0 2vh;
+  padding: 2vh;
+  width: 25vw;
+}
+
+.datos {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vh;
+  z-index: 1;
+  height: 20vh;
+  width: 60vw;
+  background: white;
+  top: 30%;
+  left: 20%;
+  box-shadow: 5px 5px 10px grey;
+}
+.datos span {
+  height: auto;
+  border-right: 2px inset gray;
+}
+.datos div {
+  padding: 2vh;
+  margin: 8vh;
+}
+.datos div h1 {
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-size: 3.5vh;
+}
+.datos div h2 {
+  color: grey;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8vh;
+}
+
+.borde-linea {
+  height: 45%;
+  border-left: 0.01vh solid rgba(20, 19, 19, 0.123);
+}
+
+.borde-linea-r {
+  height: 45%;
+  border-right: 0vh solid gray;
+}
+
+#map {
+  position: relative;
+  z-index: 0;
+  height: 60vh;
+}
+
+@media (max-width: 375px) {
+  .datos {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .datos div {
+    margin: 0.5vh;
+    padding: 0.5vh;
+  }
+  .datos div h1 {
+    color: black;
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5vh;
+  }
+  .datos div h2 {
+    color: grey;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5vh;
+  }
+
+  .borde-linea {
+    height: 45%;
+    border-left: 0vh solid gray;
+  }
+
+  .borde-linea-r {
+    height: 45%;
+    border-right: 0vh solid gray;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link  rel="stylesheet"  href="style.css" />
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    
+
+  </head>
+  <body>
+    <main>
+      <div class="barra">
+        <h1>IP Adress Tracker</h1>
+        <form action="" name="myForm" onsubmit="return getAddress(this)" method="" >
+          <input type="text" id="ipAddress" name="ipAddress" placeholder="Search any IP adress or domain">
+          <input type="button" id="button" name="button" onclick="getAddress(this.form)" src="./images/icon-arrow.svg">
+        </form>
+        
+      </div>
+      <div class="datos">
+        <div class="borde-linea-r">
+          <h2>IP ADDRESS</h2>
+          <h1 id="ipAdress"></h1>
+        </div>
+        <div class="borde-linea">
+          <h2>LOCATION</h2>
+          <h1 id="location"></h1>
+        </div>
+        <div class="borde-linea">
+          <h2>TIMEZONE</h2>
+          <h1 id="timezone"></h1>
+        </div>
+        <div class="borde-linea">
+          <h2>ISP</h2>
+          <h1 id="isp"></h1>
+        </div>
+    </div>
+      <div id="map"></div>
+    </main>
+   
+    <script src="Logic/IPAddressTrack.js"></script>
+    <script src="Logic/Map.js"></script>
+    
+  </body>
+</html>
